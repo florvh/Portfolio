@@ -49,14 +49,10 @@ const RandomValue = ({min, max} : RandomValueProps) => {
 }
 
 const Interval = () => {
- 
-
-  
-
-   
     return (
         <div className={styles.Interval}>
             <h1>Interval</h1>
+            <p>In this assignment it was the goal to create few things on a interval like a random number, update the current time <br /> a random number between 1 and 100 and a random value between 100 and 200</p>
         <>
             <Timer/>
             <CurrentTime/>

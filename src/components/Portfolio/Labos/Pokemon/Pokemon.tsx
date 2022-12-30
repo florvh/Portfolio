@@ -71,6 +71,7 @@ const App = () => {
     return (
         <div className={styles.Pokemon}>
             <h1>Pokemon</h1>
+            <p>In this assignment it was the goal to create a list of pokemon shows pokemon acording to the amount you want to show <br />and also make a filter to look for a specific one</p>
             <>
                 <Pokedex limit={selectedLimit}/>
                 <input type="number" onChange={(e) => setLimit(parseInt(e.target.value))} value={limit}/><button onClick={() => setSelectedLimit(limit)}>Set Limit</button>

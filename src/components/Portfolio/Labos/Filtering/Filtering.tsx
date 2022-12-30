@@ -37,6 +37,7 @@ const FilterList = () => {
     return (
         <div className={styles.Filtering}>
             <h1>Filtering</h1>
+            <p>In this assignment it was the goal to create a filltering system using an input field that checks for the name in the list</p>
             <div>
                 Search: <input type="text" value={filter} onChange={(e) => setFilter(e.target.value)} />
             </div>

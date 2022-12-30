@@ -39,6 +39,7 @@ const ShoppingList = () => {
   return (
     <div className={styles.shoppingList}>
         <h1>Shopping List</h1>
+        <p>In this assignment it was the goal to create a simple shopping list where you can add an item and the amount and also be able to remove an item upon pressing a button</p>
       {errorMessage && <div>{errorMessage}</div>}
       {succesMessage &&<div>{succesMessage}</div>}
 

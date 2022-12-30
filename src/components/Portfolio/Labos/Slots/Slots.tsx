@@ -52,7 +52,8 @@ export const SlotMachine = ({ slots }: { slots: number }) => {
 
   return (
     <div className={styles.slotMachineContainer}>
-        <h1>Slots</h1>
+      <h1>Slots</h1>
+      <p>In this assignment it was the goal to create a slot machine that would give you 3 random images upon pressing the button <br />upon a loss you would lose a euro and if you win you would gain 30</p>
       {money > 0 && <div>Saldo: €{money}</div>}
       <div className={styles.slotMachineSubContainer}>
         <button className={styles.lever} onClick={pullLever} disabled={money > 0 ? false : true}>Pull Lever</button>

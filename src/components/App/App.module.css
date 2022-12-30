@@ -1,5 +1,5 @@
 .container {
-    font-family: emoji;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     overflow-x: hidden;
     height: 100vh;
 }

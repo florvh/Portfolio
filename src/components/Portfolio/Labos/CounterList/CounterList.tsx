@@ -21,6 +21,8 @@ const CounterList = () => {
     return (
         <div className={styles.CounterList}>
             <h1>Counter List</h1>
+            <p>In this assignment it was the goal to create a button that would make 1 or more counters with the function of counting op or down<br></br>
+            and at the bottom you can see the total number across all counters</p>
             <>
                 {counters.map((counter, index) => {
                     let color = 'black';

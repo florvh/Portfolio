@@ -69,6 +69,7 @@ const App = () => {
     return (
         <div className={styles.Todo}>
             <h1>Todo</h1>
+            <p>In this assignment it was the goal to create a simple to do list and be able to check off anything you are done with</p>
             <AddTodo addTodo={addTodo}/>
             <TodoList markCompleted={markCompleted} todos={todos}/>
         </div>

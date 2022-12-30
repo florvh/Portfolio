@@ -35,6 +35,7 @@ const TicTacToe = () => {
   return (
     <div className={styles.TTT}>
     <h1>Tic Tac Toe</h1>
+    <p>In this assignment it was the goal to create a raster where you would be able to play the game tic tac toe in</p>
     <div className='playingfield'
     style={{
         display: 'grid',
