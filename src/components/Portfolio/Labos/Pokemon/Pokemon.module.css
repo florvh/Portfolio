@@ -1,0 +1,9 @@
+.Pokemon {
+    background-color: #cfb59e;
+    width: 95vw;
+    min-height: 75vh;
+    margin-bottom: 50px;
+}
+input {
+    margin-bottom: 10px;
+}

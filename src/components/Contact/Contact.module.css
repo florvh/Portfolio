@@ -1,0 +1,24 @@
+.Contact {
+    background-color: #cfb59e;
+    width: 95vw;
+    height: 75vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 30VW;
+}
+label{
+    padding-bottom:  5px;
+}
+input{
+    padding-top: 5px;
+}
+textarea {
+    height: 200PX;
+}
+.Contact p{
+    width: 50%;
+    font-size: 0.6cm;
+    color: white;
+}

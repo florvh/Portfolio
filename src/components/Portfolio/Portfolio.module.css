@@ -1,0 +1,29 @@
+.Portfolio {
+    background-color: #cfb59e;
+    width: 95vw;
+    height: 75vh;
+}
+.navLink, .activeNavLink {
+    padding: 15px;
+    border-radius: 25px;
+    color: #88ee22;
+    background-color: black;
+    font-size: 40Px;
+    flex: 1 0 21%;
+    margin-top: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.Portfolio p{
+    width: 50%;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 0.6cm;
+    color: white;
+    margin-top: 20px;
+    
+}
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}

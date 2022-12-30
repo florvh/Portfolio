@@ -1,0 +1,21 @@
+.Home {
+    background-color: #cfb59e;
+    width: 95vw;
+    height: 75vh;
+}
+.Home p{
+    width: 50%;
+    margin-right: auto;
+    text-align: center;
+    padding-left: 10px;
+    font-size: 0.6cm;
+    color: white;
+}
+img{
+    width: 30%;
+    padding-right: 5%;
+}
+article{
+    display: flex;
+    align-items: center;
+}
