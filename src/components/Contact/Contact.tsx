@@ -25,6 +25,9 @@ const Contact = () => {
       result => console.log(result.text),
       error => console.log(error.text)
     );
+    setName("");
+    setEmail("");
+    setMessage("");
   }
 
   return(

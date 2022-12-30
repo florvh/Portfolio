@@ -17,7 +17,7 @@ const Portfolio = () => {
         <NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="Todo">Todo</NavLink>
         <NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="Pokemon">Pokemon</NavLink>
       </div>
-      <p>Click on of the buttons above to navigate to a page containing an asignment i made during my time in school. This way you can see where my knowlage is regarding react</p>
+      <p>Click on one of the buttons above to navigate to a page containing an assignment I made during my time in school. This way you can see where my knowledge is regarding React.</p>
     </div>
   );
 }

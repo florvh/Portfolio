@@ -1,4 +1,5 @@
 import { Outlet, createBrowserRouter, RouterProvider, NavLink } from "react-router-dom";
+import React, { useState  } from 'react';
 import styles from "./App.module.css";
 import Portfolio from "../Portfolio/Portfolio";
 import Contact from "../Contact/Contact";
@@ -12,24 +13,31 @@ import Interval from "../Portfolio/Labos/Interval/Interval";
 import Todo from "../Portfolio/Labos/Todo/Todo";
 import Pokemon from "../Portfolio/Labos/Pokemon/Pokemon";
 
+export const ThemeContext = React.createContext({color: "black", setColor: (color: string) => {}});
+
 
 const Root = () => {
+  const [color, setColor] = useState("black");
+  const bg = color === "blue" ? "blue" : "black";
   return (
-    <div className={styles.container}>
-        <div className={styles.head}>Portfolio Flor van Hassel
-        <div className={styles.nav}>
-            <NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="/" >Home</NavLink>
-            <NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="Portfolio">Portfolio</NavLink>
-            <NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="contact">Contact</NavLink>
-        </div>
-        </div>
-        <div className={styles.content}>
-            <Outlet/>
-        </div>
-        <div className={styles.footer}>
-            Portfolio gemaakt in opdracht van AP | 2022/2023 
-        </div>
-    </div>
+    <ThemeContext.Provider value={{color: color, setColor: setColor}}>
+      <div className={styles.container} style={{backgroundColor: bg}}>
+          <div className={styles.head}>Portfolio Flor van Hassel
+          <div className={styles.nav}>
+              <NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="/" >Home</NavLink>
+              <NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="Portfolio">Portfolio</NavLink>
+              <NavLink className={({isActive}) => isActive ? styles.activeNavLink : styles.navLink} to="contact">Contact</NavLink>  
+          </div>
+            <button onClick={() => { setColor(color === "blue" ? "black" : "blue")}}>Change Theme</button>
+          </div>
+          <div className={styles.content}>
+              <Outlet/>
+          </div>
+          <div className={styles.footer}>
+              Portfolio gemaakt in opdracht van AP | 2022/2023 
+          </div>
+      </div>
+    </ThemeContext.Provider>
   );
 }
 

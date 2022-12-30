@@ -1,6 +1,7 @@
 .container {
     font-family: emoji;
     overflow-x: hidden;
+    height: 100vh;
 }
 .head {
     display: flex;
@@ -15,6 +16,7 @@
 }
 .navLink, .activeNavLink {
  padding: 5px;
+ color: #88ee22;
 }
 .footer {
     width: 100vw;
@@ -22,8 +24,20 @@
     bottom: 0;
     padding-left: 5px;
     color: #88ee22;
-    background-color: black;
 }
 .content {
     text-align: -webkit-center;
+}
+button {
+    display:inline-block;
+    padding:0.35em 1.2em;
+    border:0.1em solid #0d000004;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    font-weight:300;
+    color:#000000;
+    text-align:center;
+    transition: all 0.2s;
+    margin-left: auto;
 }
